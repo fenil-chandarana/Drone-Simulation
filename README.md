@@ -1,70 +1,31 @@
-# Drone Simulator:
+## Drone Simulator:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Drone Simulator is a React-based web application that visualizes drone movement on Google Maps based on user-provided coordinate data. This interactive tool allows users to input or upload time-series data of latitude and longitude coordinates, simulating a drone's flight path on a world map.
 
-## Available Scripts
+# Features
+- Interactive Google Maps display
+- Manual coordinate input (latitude, longitude, timestamp)
+- File upload support for coordinate data (.csv or .txt)
+- Real-time drone movement simulation
+- Path visualization with polylines
+- Pause and resume simulation functionality
 
-In the project directory, you can run:
+# Prerequisites
+Node.js
+npm (Node Package Manager)
+Google Maps API Key
 
-### `npm start`
+# Usage:
+1. Enter coordinates manually in the format: latitude,longitude,timestamp
+2. Click "Add Coordinate" to add the point to the path
+3. Alternatively, upload a CSV or TXT file with coordinate data
+4. Click "Simulate" to start the drone movement
+5. Use "Pause" and "Resume" to control the simulation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# File Format for Upload:
+The application accepts .csv or .txt files with the following format:
+latitude1,longitude1,timestamp1
+latitude2,longitude2,timestamp2
+example:
+28.6139,77.2090,1689418800
+28.5169,77.3034,1689419100
