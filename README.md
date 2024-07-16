@@ -1,8 +1,8 @@
-## Drone Simulator:
+# Drone Simulator:
 
 Drone Simulator is a React-based web application that visualizes drone movement on Google Maps based on user-provided coordinate data. This interactive tool allows users to input or upload time-series data of latitude and longitude coordinates, simulating a drone's flight path on a world map.
 
-# Features
+## Features
 - Interactive Google Maps display
 - Manual coordinate input (latitude, longitude, timestamp)
 - File upload support for coordinate data (.csv or .txt)
@@ -10,19 +10,19 @@ Drone Simulator is a React-based web application that visualizes drone movement 
 - Path visualization with polylines
 - Pause and resume simulation functionality
 
-# Prerequisites
+## Prerequisites
 Node.js
 npm (Node Package Manager)
 Google Maps API Key
 
-# Usage:
+## Usage:
 1. Enter coordinates manually in the format: latitude,longitude,timestamp
 2. Click "Add Coordinate" to add the point to the path
 3. Alternatively, upload a CSV or TXT file with coordinate data
 4. Click "Simulate" to start the drone movement
 5. Use "Pause" and "Resume" to control the simulation
 
-# File Format for Upload:
+## File Format for Upload:
 The application accepts .csv or .txt files with the following format:
 latitude1,longitude1,timestamp1
 latitude2,longitude2,timestamp2
